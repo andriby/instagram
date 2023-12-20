@@ -112,6 +112,8 @@ svg{
 
 
 .foto-de-perfil img {
+    border: 1px solid #323232;
+    padding: .15rem;
     border-radius: 100%;
 }
 
@@ -193,11 +195,91 @@ svg{
     flex-direction: column;
     align-items: center;
     gap: .5rem;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .historia img{
+    border: 1px solid #323232;
+    padding: .15rem;
     border-radius: 50%;
     width: 74px;
     height: 74px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin-bottom: .5rem;
+}
+
+.tabs div{
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.tabs div:first-child{
+    border-top: 1px solid #fff;
+    font-weight: bold;
+}
+
+.tabs div svg{
+    margin-bottom: 1px;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imagen {
+    background-color: #fff;
+    margin: .1rem;
+    height: 19.8rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.foto1{
+    background-image: url(../img/foto1.jpg);
+}
+
+.foto2{
+    background-image: url(../img/foto2.jpg);
+}
+
+.foto3{
+    background-image: url(../img/foto3.jpg);
+}
+
+.foto4{
+    background-image: url(../img/foto4.jpeg);
+}
+
+.foto5{
+    background-image: url(../img/foto5.jpg);
+}
+
+.foto6{
+    background-image: url(../img/foto6.jpg);
+}
+
+.foto7{
+    background-image: url(../img/foto7.jpg);
+}
+
+.foto8{
+    background-image: url(../img/foto8.jpg);
+}
+
+.foto9{
+    background-image: url(../img/foto9.jpeg);
+}
+
+.foto10{
+    background-image: url(../img/foto10.jpg);
+}
+
+.foto11{
+    background-image: url(../img/foto11.jpg);
 }
