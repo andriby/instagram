@@ -8,31 +8,18 @@
 }
 
 .loader {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
     animation: load 3s linear forwards;
-}
-
-.loader img{
-    animation:  img-loader 1.5s linear forwards;
+    position: fixed;
+    z-index: 9999;
 }
 
 @keyframes load {
-    0% {
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-
-    100%{
-        display: none;
-    }
-}
-
-@keyframes img-loader{
-    0%{
-        display: block;
-    }
     100%{
         display: none;
     }
@@ -66,7 +53,7 @@ svg{
 
 .nav {
     width: 100%;
-    height: 80%;
+    height:90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,12 +68,20 @@ svg{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: .3;
 }
 
 .beginning li,
 .final li {
-    padding-left: 1rem;
+    padding: 1.2rem 0;
+    padding-left: .5rem;
+    border-radius: 10px;
+    width: 90%;
+}
+
+.beginning li:hover,
+.final li:hover {
+    background-color: #bdbdbdbb;
 }
 
 .principal {
@@ -233,13 +228,16 @@ svg{
 }
 
 .imagen {
-    background-color: #fff;
     margin: .1rem;
     height: 19.8rem;
-    background-position: center;
-    background-size: cover;
 }
 
+.imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+/*
 .foto1{
     background-image: url(../img/foto1.jpg);
 }
@@ -282,4 +280,4 @@ svg{
 
 .foto11{
     background-image: url(../img/foto11.jpg);
-}
+}/*
