@@ -81,7 +81,8 @@ svg{
 
 .beginning li:hover,
 .final li:hover {
-    background-color: #bdbdbdbb;
+    background-color: #dbdbdb71;
+    cursor: pointer;
 }
 
 .principal {
